@@ -1,95 +1,113 @@
 import React from 'react';
+import { FaHandsHelping, FaMugHot, FaUsers, FaRegLightbulb, FaCogs, FaChartLine } from 'react-icons/fa';
 
 const About = () => {
     return (
-        <div className="container mx-auto px-8 md:px-4 py-8">
-            <h1 className="text-3xl font-semibold mb-4">About Get Me a Chai</h1>
-            <p className="text-lg mb-6">
-                Get Me a Chai is a crowdfunding platform designed for creators to fund their projects with the support of their fans. It&apos;s a space where your fans can directly contribute to your creative endeavors by buying you a chai. Unlock the potential of your fanbase and bring your projects to life.
-            </p>
+        <div className="container mx-auto px-6 py-12">
+            {/* Hero Section */}
+            <section className="text-center mb-12">
+                <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text mb-4">About Get Me a Chai</h1>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Get Me a Chai is a crowdfunding platform where creators can fund their projects with the support of their fans. It's as simple as sharing a chai and making dreams a reality.
+                </p>
+            </section>
 
-            <h2 className="text-2xl font-semibold mb-4">How It Works</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div className="flex items-center mb-6">
-                    <img className="w-20 h-20 rounded-full mr-4" src="/group.gif" alt="Fans Want to Collaborate" />
-                    <div>
-                        <h3 className="text-xl font-semibold mb-2">Fans Want to Collaborate</h3>
-                        <p>Your fans are enthusiastic about collaborating with you on your projects.</p>
+            {/* How It Works Section */}
+            <section className="mb-12">
+                <h2 className="text-3xl font-semibold bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text mb-6">How It Works</h2>
+                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    {/* Card 1 */}
+                    <div className="flex flex-col items-center text-center p-6 bg-gradient-to-r from-white/10 via-white/5 to-white/10 backdrop-blur-lg shadow-md rounded-lg border border-white/20">
+                        <FaUsers className="text-blue-500 text-5xl mb-4" />
+                        <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+                            Fans Want to Collaborate
+                        </h3>
+                        <p className="text-gray-300">Your fans are eager to support and collaborate on your projects.</p>
+                    </div>
+
+                    {/* Card 2 */}
+                    <div className="flex flex-col items-center text-center p-6 bg-gradient-to-r from-white/10 via-white/5 to-white/10 backdrop-blur-lg shadow-md rounded-lg border border-white/20">
+                        <FaMugHot className="text-yellow-500 text-5xl mb-4" />
+                        <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-transparent bg-clip-text">
+                            Support Through Chai
+                        </h3>
+                        <p className="text-gray-300">Fans contribute to your projects by buying you chai.</p>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div className="flex flex-col items-center text-center p-6 bg-gradient-to-r from-white/10 via-white/5 to-white/10 backdrop-blur-lg shadow-md rounded-lg border border-white/20">
+                        <FaRegLightbulb className="text-green-500 text-5xl mb-4" />
+                        <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-green-400 via-teal-500 to-blue-500 text-transparent bg-clip-text">
+                            Bring Ideas to Life
+                        </h3>
+                        <p className="text-gray-300">Use the support to turn your creative ideas into reality.</p>
                     </div>
                 </div>
-                <div className="flex items-center mb-6">
-                    <img className="w-20 h-20 rounded-full mr-4" src="/coin.gif" alt="Support Through Chai" />
-                    <div>
-                        <h3 className="text-xl font-semibold mb-2">Support Through Chai</h3>
-                        <p>Receive support from your fans in the form of chai purchases, directly contributing to your project funding.</p>
+            </section>
+
+
+            {/* Benefits Section */}
+            <section className="mb-12">
+                <h2 className="text-3xl font-semibold bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text mb-6">Why Choose Us</h2>
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    {/* Benefit 1 */}
+                    <div className="p-6 bg-gradient-to-r from-white/10 via-white/5 to-white/10 backdrop-blur-lg shadow-md rounded-lg border border-white/20">
+                        <FaHandsHelping className="text-purple-500 text-5xl mb-4" />
+                        <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text">
+                            For Creators
+                        </h3>
+                        <ul className="list-disc pl-6 text-gray-300">
+                            <li className="mb-2">Direct financial support</li>
+                            <li className="mb-2">Personal engagement with fans</li>
+                            <li>Access to tailored tools</li>
+                        </ul>
+                    </div>
+
+                    {/* Benefit 2 */}
+                    <div className="p-6 bg-gradient-to-r from-white/10 via-white/5 to-white/10 backdrop-blur-lg shadow-md rounded-lg border border-white/20">
+                        <FaChartLine className="text-red-500 text-5xl mb-4" />
+                        <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-red-400 via-orange-500 to-yellow-500 text-transparent bg-clip-text">
+                            For Fans
+                        </h3>
+                        <ul className="list-disc pl-6 text-gray-300">
+                            <li className="mb-2">Support creators directly</li>
+                            <li className="mb-2">Exclusive perks</li>
+                            <li>Be part of the process</li>
+                        </ul>
+                    </div>
+
+                    {/* Benefit 3 */}
+                    <div className="p-6 bg-gradient-to-r from-white/10 via-white/5 to-white/10 backdrop-blur-lg shadow-md rounded-lg border border-white/20">
+                        <FaCogs className="text-indigo-500 text-5xl mb-4" />
+                        <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-indigo-400 via-blue-500 to-teal-500 text-transparent bg-clip-text">
+                            For Communities
+                        </h3>
+                        <ul className="list-disc pl-6 text-gray-300">
+                            <li className="mb-2">Collaborative projects</li>
+                            <li className="mb-2">Shared resources</li>
+                            <li>Creative growth together</li>
+                        </ul>
                     </div>
                 </div>
-                {/* Add more steps as needed */}
-            </div>
+            </section>
 
-            <h2 className="text-2xl font-semibold mb-4">Benefits for Creators</h2>
-            <ul className="list-disc pl-6 mb-6">
-                <li className="mb-2">Direct financial support from your fanbase</li>
-                <li className="mb-2">Engage with your fans on a more personal level</li>
-                <li className="mb-2">Access to a platform tailored for creative projects</li>
-                {/* Add more benefits */}
-            </ul>
 
-            <h2 className="text-2xl font-semibold mb-4">Benefits for Fans</h2>
-            <ul className="list-disc pl-6 mb-6">
-                <li className="mb-2">Directly contribute to the success of your favorite creators</li>
-                <li className="mb-2">Exclusive rewards and perks for supporting creators</li>
-                <li className="mb-2">Be part of the creative process and connect with creators</li>
-                {/* Add more benefits */}
-            </ul>
-
-            {/* Additional sections */}
-            <h2 className="text-2xl font-semibold mb-4">Benefits of Collaboration</h2>
-            <ul className="list-disc pl-6 mb-6">
-                <li className="mb-2">Unlock new opportunities through collaboration with fellow creators</li>
-                <li className="mb-2">Expand your network and reach a wider audience</li>
-                <li className="mb-2">Combine skills and resources to create innovative projects</li>
-                {/* Add more benefits */}
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-4">Community Engagement</h2>
-            <ul className="list-disc pl-6 mb-6">
-                <li className="mb-2">Interact with a supportive community of like-minded individuals</li>
-                <li className="mb-2">Receive valuable feedback and encouragement from peers</li>
-                <li className="mb-2">Participate in discussions and events centered around your interests</li>
-                {/* Add more benefits */}
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-4">Access to Resources</h2>
-            <ul className="list-disc pl-6 mb-6">
-                <li className="mb-2">Gain access to resources such as tutorials, templates, and tools</li>
-                <li className="mb-2">Receive guidance and mentorship from experienced creators</li>
-                <li className="mb-2">Stay updated on industry trends and best practices</li>
-                {/* Add more benefits */}
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-4">Recognition and Exposure</h2>
-            <ul className="list-disc pl-6 mb-6">
-                <li className="mb-2">Showcase your work to a global audience and gain recognition</li>
-                <li className="mb-2">Feature in promotional materials and campaigns</li>
-                <li className="mb-2">Build your portfolio and increase your credibility as a creator</li>
-                {/* Add more benefits */}
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-4">Supportive Community</h2>
-            <ul className="list-disc pl-6 mb-6">
-                <li className="mb-2">Join a community that values creativity, diversity, and inclusivity</li>
-                <li className="mb-2">Find encouragement and inspiration from fellow members</li>
-                <li className="mb-2">Collaborate on projects and share resources for mutual growth</li>
-                {/* Add more benefits */}
-            </ul>
-
+            {/* Call to Action */}
+            <section className="text-center">
+                <h2 className="text-3xl font-semibold bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text mb-4">Ready to Make a Difference?</h2>
+                <p className="text-gray-600 max-w-xl mx-auto mb-6">
+                    Join Get Me a Chai today and start collaborating, creating, and connecting with a community of changemakers.
+                </p>
+                <button className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-700 transition">
+                    Get Started
+                </button>
+            </section>
         </div>
     );
-}
+};
 
 export default About;
 
 export const metadata = {
     title: "About - Get Me A Chai",
-}
+};
